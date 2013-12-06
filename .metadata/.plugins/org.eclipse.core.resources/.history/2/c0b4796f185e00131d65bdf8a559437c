@@ -15,7 +15,7 @@
         android:id="@+id/fight_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight=".35"
+        android:layout_weight=".25"
         android:text="@string/fighter1"
         android:inputType="textPersonName" />
 
@@ -24,14 +24,13 @@
     android:id="@+id/vs"
     android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
-	android:layout_weight=".30"
-	android:gravity="center" 
+	android:layout_weight=".50" 
 	android:text="@string/VS" />
 <EditText
         android:id="@+id/fight_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight=".35"
+        android:layout_weight=".25"
         android:text="@string/fighter2"
         android:inputType="textPersonName" />
     
