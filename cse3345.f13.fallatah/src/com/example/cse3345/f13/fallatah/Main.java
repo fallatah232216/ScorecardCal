@@ -8,11 +8,13 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 public class Main extends Activity {
 //declare the variables
@@ -56,7 +58,24 @@ public class Main extends Activity {
         
         next=(Button) findViewById(R.id.button1);
         
-        
+        //the listeners for the radio boxes
+        amature.setOnCheckedChangeListener(new OnCheckedChangeListener(){
+			public void onCheckedChanged(CompoundButton buttonView,
+					boolean isChecked) {
+					level="Amature";
+					amature.isChecked();
+					professional.setChecked(false);	
+			}
+        	});
+        professional.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+			public void onCheckedChanged(CompoundButton buttonView,
+					boolean isChecked) {
+						level="professional";
+						professional.isChecked();
+					amature.setChecked(false);
+					
+			}
+        	});
         
         
     }
