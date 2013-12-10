@@ -2,8 +2,7 @@ package com.example.cse3345.f13.fallatah;
 
 import java.util.ArrayList;
 
-import com.example.cse3345f13fallatah.Activity2;
-import com.example.cse3345f13fallatah.Main;
+
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -44,7 +43,6 @@ public class Main extends Activity {
         amature=(RadioButton) findViewById(R.id.radioButton1);
         fight=(ToggleButton) findViewById(R.id.toggleButton1);
         rounds=(Spinner) findViewById(R.id.spinner1);
-        log.v("hi", "hi");
         //for round spinner
         ArrayList<String> roundlist = new ArrayList<String>();
         roundlist.add("NO OF Rounds");
