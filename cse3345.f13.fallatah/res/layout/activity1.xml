@@ -86,7 +86,40 @@
       android:layout_marginTop="22dp"
       android:text="&quot;&quot;"
       android:textAppearance="?android:attr/textAppearanceLarge"/>
-        
   
-
+  <ToggleButton 
+      android:id="@+id/toggleButton1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/textView3"
+      android:layout_alignBottom="@+id/textView3"
+      android:layout_alignRight="@+id/view1"
+      android:text="ToggleButton"/> 
+      
+  <Spinner 
+      android:id="@+id/spinner1" 
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/toggleButton1"
+      android:layout_marginTop="43dp"/>
+  
+  <Spinner 
+      android:id="@+id/spinner3" 
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_alignRight="@+id/toggleButton1"
+      android:layout_alignTop="@+id/spinner1"
+      android:entries="@array/country_arrays"/>
+  
+	<Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:text="  Next  " />
+      
+  
+  
 </RelativeLayout>
