@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout1"
         android:layout_width="500dp"
         android:layout_height="60dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
         
       <EditText
           android:id="@+id/editText1"
@@ -30,7 +30,12 @@
           android:text="@string/VS"
           android:textAppearance="?android:attr/textAppearanceLarge"/>
       
-      
+      <EditText
+          android:id="@+id/textView2"
+          android:layout_width="130dp"
+          android:layout_height="wrap_content"
+          android:hint="Fighter2 Name"/>
+          
   </LinearLayout>    
     
 
