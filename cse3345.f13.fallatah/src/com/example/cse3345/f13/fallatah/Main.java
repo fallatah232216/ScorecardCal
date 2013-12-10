@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -77,6 +78,25 @@ public class Main extends Activity {
 			}
         	});
         
+        //action listener on toggle button
+        fight.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+             // TODO Auto-generated method stub
+            if(fight.isChecked())
+            {
+            	 t3.setText("Championship Fight");
+				 fighttype="Championship Fight";
+				 belts.setVisibility(View.VISIBLE);
+            	
+             }
+              else
+              {
+            	  t3.setText("Ranked Fight");
+            	  fighttype="Ranked Fight";
+				  belts.setVisibility(View.INVISIBLE);  
+               }
+               }
+               });
         
     }
 
