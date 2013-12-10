@@ -97,7 +97,26 @@ public class Main extends Activity {
                }
                }
                });
-        
+        //listener on next button
+        next.setOnClickListener(new View.OnClickListener() {    
+			public void onClick(View arg0) {		 
+				 // get selected radio button from radioGroup
+				if(amature.isChecked()) 
+				{
+					level="Amature";
+					professional.setChecked(false);
+				} 
+				else 
+				if(professional.isChecked()) 
+				{
+					level="professional";
+					amature.setChecked(false);
+				}
+				
+				
+				
+				
+				
     }
 
 
