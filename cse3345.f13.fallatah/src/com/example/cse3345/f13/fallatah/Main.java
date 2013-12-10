@@ -2,8 +2,12 @@ package com.example.cse3345.f13.fallatah;
 
 import java.util.ArrayList;
 
+import com.example.cse3345f13fallatah.Activity2;
+import com.example.cse3345f13fallatah.Main;
+
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -113,10 +117,35 @@ public class Main extends Activity {
 					amature.setChecked(false);
 				}
 				
+				// get the toggle button text
+				StringBuffer result = new StringBuffer();
+				result.append(fight.getText());
+				String onoff=result.toString();
 				
+				//Handle the toggle button
+				if(onoff.equals("ON"))
+				{
+					t3.setText("Championship Fight");
+					fighttype="Championship Fight";
+					belts.setVisibility(View.VISIBLE);
+				}
 				
+				else
+					 if(onoff.equals("OFF"))
+					 {
+						 t3.setText("Ranked Fight");
+						 fighttype="Ranked Fight";
+						 belts.setVisibility(View.INVISIBLE); 
+					 }
 				
+				firstname=fighter1.getText().toString();
+				 secondname=fighter2.getText().toString();
+				 Intent intent = new Intent (Main.this, Activity2.class);
+		         startActivity(intent);
 				
+			}		
+			});
+					 						
     }
 
 
