@@ -1,8 +1,12 @@
 package com.example.cse3345.f13.fallatah;
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -33,6 +37,27 @@ public class Main extends Activity {
         fight=(ToggleButton) findViewById(R.id.toggleButton1);
         rounds=(Spinner) findViewById(R.id.spinner1);
         log.v("hi", "hi");
+        //for round spinner
+        ArrayList<String> roundlist = new ArrayList<String>();
+        roundlist.add("NO OF Rounds");
+        roundlist.add("3");
+        roundlist.add("4");
+        roundlist.add("6");
+        roundlist.add("8");
+        roundlist.add("10");
+        roundlist.add("12");
+        ArrayAdapter<String> roundAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, roundlist);
+        roundAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        rounds.setAdapter(roundAdapter);
+        
+        belts=(Spinner) findViewById(R.id.spinner3);
+        belts.setVisibility(View.INVISIBLE);
+        //for spinner belts
+        
+        next=(Button) findViewById(R.id.button1);
+        
+        
+        
         
     }
 
