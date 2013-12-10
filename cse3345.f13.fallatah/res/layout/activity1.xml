@@ -1,12 +1,11 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Main">
+    tools:context=".Main" xmlns:android="http://schemas.android.com/apk/res/android">
 
   <LinearLayout
         android:id="@+id/linearLayout1"
@@ -23,6 +22,14 @@
           android:hint="Fighter1 Name">
           
       </EditText>  
+      
+      <TextView 
+          android:id="@+id/textView1"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:text="@string/VS"
+          android:textAppearance="?android:attr/textAppearanceLarge"/>
+      
       
   </LinearLayout>    
     
