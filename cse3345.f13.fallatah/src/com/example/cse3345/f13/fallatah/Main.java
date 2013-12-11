@@ -1,8 +1,7 @@
 package com.example.cse3345.f13.fallatah;
 
 import java.util.ArrayList;
-
-
+import java.util.List;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -23,68 +22,70 @@ import android.widget.ToggleButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
 public class Main extends Activity {
-//declare the variables
+	//declare the variables
 	EditText fighter1,fighter2;
 	RadioButton amature,professional;
 	ToggleButton fight;
-	
 	public static Spinner rounds,belts;
 	Button next;
 	public static String level,fighttype,firstname,secondname;
-	
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity1);
-        //get all the layout in the variable
-        final TextView t3=(TextView) findViewById(R.id.textView3);
-        t3.setText("Ranked Fight");
-        fighter1=(EditText) findViewById(R.id.editText1);
-        fighter2=(EditText) findViewById(R.id.editText2);
-        amature=(RadioButton) findViewById(R.id.radioButton1);
-        fight=(ToggleButton) findViewById(R.id.toggleButton1);
-        rounds=(Spinner) findViewById(R.id.spinner1);
-        Log.v("hi", "hi");
-        //for round spinner
-        ArrayList<String> roundlist = new ArrayList<String>();
-        roundlist.add("NO OF Rounds");
-        roundlist.add("3");
-        roundlist.add("4");
-        roundlist.add("6");
-        roundlist.add("8");
-        roundlist.add("10");
-        roundlist.add("12");
-        ArrayAdapter<String> roundAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, roundlist);
-        roundAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        rounds.setAdapter(roundAdapter);
-        
-        belts=(Spinner) findViewById(R.id.spinner3);
-        belts.setVisibility(View.INVISIBLE);
-        //for spinner belts
-        
-        next=(Button) findViewById(R.id.button1);
-        
-        //the listeners for the radio boxes
-        amature.setOnCheckedChangeListener(new OnCheckedChangeListener(){
-			public void onCheckedChanged(CompoundButton buttonView,
-					boolean isChecked) {
-					level="Amature";
-					amature.isChecked();
-					professional.setChecked(false);	
-			}
-        	});
-        professional.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-			public void onCheckedChanged(CompoundButton buttonView,
-					boolean isChecked) {
-						level="professional";
-						professional.isChecked();
-					amature.setChecked(false);
-					
-			}
-        	});
-        
-        //action listener on toggle button
-        fight.setOnClickListener(new OnClickListener() {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity1);
+		//get all the layout in the variable
+		final TextView t3=(TextView) findViewById(R.id.textView3);
+		t3.setText("Ranked Fight");
+		fighter1=(EditText) findViewById(R.id.editText1);
+		fighter2=(EditText) findViewById(R.id.editText2);
+		amature=(RadioButton) findViewById(R.id.radioButton1);
+		professional=(RadioButton) findViewById(R.id.radioButton2);
+		fight=(ToggleButton) findViewById(R.id.toggleButton1);
+		rounds=(Spinner) findViewById(R.id.spinner1);
+		Log.v("hi", "hi");
+		//for round spinner
+		ArrayList<String> roundlist = new ArrayList<String>();
+		roundlist.add("No Of Rounds");
+		roundlist.add("3");
+		roundlist.add("4");
+		roundlist.add("6");
+		roundlist.add("8");
+		roundlist.add("10");
+		roundlist.add("12");
+		ArrayAdapter<String> roundAdapter = new ArrayAdapter<String>(this,
+		android.R.layout.simple_spinner_item, roundlist);
+		roundAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+		rounds.setAdapter(roundAdapter);
+		
+		
+		
+		belts=(Spinner) findViewById(R.id.spinner3);
+		belts.setVisibility(View.INVISIBLE);
+		//for spinner belts 
+		
+		next=(Button) findViewById(R.id.button1);
+		
+		//action listner on the checkbox
+		 amature.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+				public void onCheckedChanged(CompoundButton buttonView,
+						boolean isChecked) {
+						level="Amature";
+						amature.isChecked();
+						professional.setChecked(false);	
+				}
+	        	});
+		 professional.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+				public void onCheckedChanged(CompoundButton buttonView,
+						boolean isChecked) {
+							level="professional";
+							professional.isChecked();
+						amature.setChecked(false);
+						
+				}
+	        	});
+		
+		//actionlistner on toggle button
+		fight.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
              // TODO Auto-generated method stub
             if(fight.isChecked())
@@ -102,59 +103,56 @@ public class Main extends Activity {
                }
                }
                });
-        //listener on next button
-        next.setOnClickListener(new View.OnClickListener() {    
-			public void onClick(View arg0) {		 
-				 // get selected radio button from radioGroup
-				if(amature.isChecked()) 
-				{
-					level="Amature";
-					professional.setChecked(false);
-				} 
-				else 
-				if(professional.isChecked()) 
-				{
-					level="professional";
-					amature.setChecked(false);
-				}
-				
-				// get the toggle button text
-				StringBuffer result = new StringBuffer();
-				result.append(fight.getText());
-				String onoff=result.toString();
-				
-				//Handle the toggle button
-				if(onoff.equals("ON"))
-				{
-					t3.setText("Championship Fight");
-					fighttype="Championship Fight";
-					belts.setVisibility(View.VISIBLE);
-				}
-				
-				else
+		
+		
+		//action listner on the next button
+		next.setOnClickListener(new View.OnClickListener() {    
+				public void onClick(View arg0) {		 
+					 // get selected radio button from radioGroup
+					if(amature.isChecked()) 
+					{
+						level="Amature";
+						professional.setChecked(false);
+					} 
+					else 
+					if(professional.isChecked()) 
+					{
+						level="professional";
+						amature.setChecked(false);
+					}
+					//get the toggle button text
+			         StringBuffer result = new StringBuffer();
+					 result.append(fight.getText());
+					 String onoff=result.toString();
+					 //handle the toggle button
+					 if(onoff.equals("ON"))
+					 {
+						 t3.setText("Championship Fight");
+						 fighttype="Championship Fight";
+						 belts.setVisibility(View.VISIBLE);
+					 }
+					 
+					 else
 					 if(onoff.equals("OFF"))
 					 {
 						 t3.setText("Ranked Fight");
 						 fighttype="Ranked Fight";
-						 belts.setVisibility(View.INVISIBLE); 
+						 belts.setVisibility(View.INVISIBLE);
 					 }
-				
-				firstname=fighter1.getText().toString();
-				 secondname=fighter2.getText().toString();
-				 Intent intent = new Intent (Main.this, Activity2.class);
-		         startActivity(intent);
-				
-			}		
-			});
-					 						
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-    	MenuInflater inflater = getMenuInflater();
-    	inflater.inflate(R.menu.main, menu);
+					 firstname=fighter1.getText().toString();
+					 secondname=fighter2.getText().toString();
+					 Intent intent = new Intent (Main.this, Activity2.class);
+			         startActivity(intent);
+					
+				}		
+				});
+	}
+	
+	// add menu in the applicaiona
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
         return true;
     }
-    
 }
