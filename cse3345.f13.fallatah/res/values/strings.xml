@@ -3,16 +3,16 @@
 
     <string name="app_name">ScorecardCal</string>
     <string name="action_settings">Settings</string>
-   	<string-array name="country_arrays">
-   		<item>Belts</item>
-   		<item>WBC</item>
-   		<item>WBA</item>
-   		<item>IBO</item>
-   		<item>IBF</item>
-   		<item>WBO</item>
-   	</string-array>
-   	
-   	<string-array name="roundnumbers">
+
+    <string-array name="country_arrays">
+        <item>Belts</item>
+        <item>WBC</item>
+        <item>WBA</item>
+        <item>IBO</item>
+        <item>IBF</item>
+        <item>WBO</item>
+    </string-array>
+    <string-array name="roundnumbers">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -25,6 +25,8 @@
         <item>9</item>
         <item>10</item>
     </string-array>
-   	
+
+    <string name="title_activity_activity2">Activity2</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

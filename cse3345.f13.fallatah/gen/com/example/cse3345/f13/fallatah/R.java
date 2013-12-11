@@ -28,7 +28,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000e;
+        public static final int action_settings=0x7f090036;
         public static final int button1=0x7f09000d;
         public static final int editText1=0x7f090001;
         public static final int editText2=0x7f090003;
@@ -37,22 +37,66 @@ public final class R {
         public static final int radioButton1=0x7f090007;
         public static final int radioButton2=0x7f090008;
         public static final int spinner1=0x7f09000b;
+        public static final int spinner10=0x7f090018;
+        public static final int spinner11=0x7f090019;
+        public static final int spinner12=0x7f09001a;
+        public static final int spinner13=0x7f09001c;
+        public static final int spinner14=0x7f09001b;
+        public static final int spinner15=0x7f09001d;
+        public static final int spinner16=0x7f09001e;
+        public static final int spinner17=0x7f09001f;
+        public static final int spinner18=0x7f090020;
+        public static final int spinner19=0x7f090021;
+        public static final int spinner2=0x7f090011;
+        public static final int spinner20=0x7f090022;
+        public static final int spinner21=0x7f090023;
+        public static final int spinner22=0x7f090024;
+        public static final int spinner23=0x7f090025;
+        public static final int spinner24=0x7f090026;
         public static final int spinner3=0x7f09000c;
+        public static final int spinner4=0x7f090012;
+        public static final int spinner5=0x7f090013;
+        public static final int spinner6=0x7f090014;
+        public static final int spinner7=0x7f090015;
+        public static final int spinner8=0x7f090016;
+        public static final int spinner9=0x7f090017;
         public static final int textView1=0x7f090002;
+        public static final int textView10=0x7f09002a;
+        public static final int textView11=0x7f09002b;
+        public static final int textView12=0x7f09002c;
+        public static final int textView13=0x7f09002d;
+        public static final int textView14=0x7f09002e;
+        public static final int textView15=0x7f090030;
+        public static final int textView16=0x7f09002f;
+        public static final int textView17=0x7f090031;
+        public static final int textView18=0x7f090032;
+        public static final int textView19=0x7f090033;
         public static final int textView2=0x7f090004;
+        public static final int textView20=0x7f090034;
+        public static final int textView21=0x7f090035;
         public static final int textView3=0x7f090009;
+        public static final int textView4=0x7f09000f;
+        public static final int textView5=0x7f09000e;
+        public static final int textView6=0x7f090010;
+        public static final int textView7=0x7f090027;
+        public static final int textView8=0x7f090028;
+        public static final int textView9=0x7f090029;
         public static final int toggleButton1=0x7f09000a;
         public static final int view1=0x7f090005;
     }
     public static final class layout {
         public static final int activity1=0x7f030000;
+        public static final int activity2=0x7f030001;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int activity2=0x7f080000;
+        public static final int main=0x7f080001;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int hello_world=0x7f050003;
+        public static final int title_activity_activity2=0x7f050002;
     }
     public static final class style {
         /** 
