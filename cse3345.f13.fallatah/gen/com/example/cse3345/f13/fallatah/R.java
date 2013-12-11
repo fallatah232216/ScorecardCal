@@ -29,7 +29,7 @@ public final class R {
         public static final int winner=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f090038;
+        public static final int action_settings=0x7f09003c;
         public static final int button1=0x7f09000d;
         public static final int editText1=0x7f090001;
         public static final int editText2=0x7f090003;
@@ -58,6 +58,10 @@ public final class R {
         public static final int spinner24=0x7f090026;
         public static final int spinner3=0x7f09000c;
         public static final int spinner4=0x7f090012;
+        public static final int spinner41=0x7f090038;
+        public static final int spinner42=0x7f090039;
+        public static final int spinner43=0x7f09003a;
+        public static final int spinner44=0x7f09003b;
         public static final int spinner5=0x7f090013;
         public static final int spinner6=0x7f090014;
         public static final int spinner7=0x7f090015;
