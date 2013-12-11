@@ -26,14 +26,16 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int winner=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f090037;
+        public static final int action_settings=0x7f090038;
         public static final int button1=0x7f09000d;
         public static final int editText1=0x7f090001;
         public static final int editText2=0x7f090003;
+        public static final int imageView1=0x7f090036;
         public static final int linearLayout1=0x7f090000;
-        public static final int mail=0x7f090036;
+        public static final int mail=0x7f090037;
         public static final int radio=0x7f090006;
         public static final int radioButton1=0x7f090007;
         public static final int radioButton2=0x7f090008;
