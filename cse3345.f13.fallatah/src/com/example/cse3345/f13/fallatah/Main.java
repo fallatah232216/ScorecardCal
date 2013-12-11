@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -43,6 +44,7 @@ public class Main extends Activity {
         amature=(RadioButton) findViewById(R.id.radioButton1);
         fight=(ToggleButton) findViewById(R.id.toggleButton1);
         rounds=(Spinner) findViewById(R.id.spinner1);
+        Log.v("hi", "hi");
         //for round spinner
         ArrayList<String> roundlist = new ArrayList<String>();
         roundlist.add("NO OF Rounds");

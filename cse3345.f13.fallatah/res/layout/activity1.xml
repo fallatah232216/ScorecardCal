@@ -27,7 +27,7 @@
           android:id="@+id/textView1"
           android:layout_width="50dp"
           android:layout_height="wrap_content"
-          android:text="@string/VS"
+          android:text="VS"
           android:textAppearance="?android:attr/textAppearanceLarge"/>
       
       <EditText
@@ -45,7 +45,7 @@
       android:layout_alignParentLeft="true"
       android:layout_below="@+id/linearLayout1"
       android:layout_marginTop="21dp"
-      android:text="@string/Competition"
+      android:text="Competition Level"
       android:textAppearance="?android:attr/textAppearanceLarge"/>
   
   <View
@@ -67,13 +67,13 @@
           android:id="@+id/radioButton1"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/Amature"/>
+          android:text="Amature"/>
       
       <RadioButton
          android:id="@+id/radioButton2"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:text="@string/Professional"/>
+         android:text="Professional"/>
                 
   </RadioGroup>  
   
