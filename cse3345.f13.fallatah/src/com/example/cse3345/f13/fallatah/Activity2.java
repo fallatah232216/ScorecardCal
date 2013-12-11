@@ -83,15 +83,14 @@ public class Activity2 extends Activity {
 		        firsttotal=Integer.parseInt(firstfighter.getText().toString()) + points;
 		        firstfighter.setText(""+firsttotal);
 		        
-		   
 	}
 		   
+
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity2, menu);
-		return true;
+	public void onNothingSelected(AdapterView<?> arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 
-}
+});
